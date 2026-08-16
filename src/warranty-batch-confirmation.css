@@ -1,0 +1,147 @@
+.wr-batch-history-action {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  height: 40px;
+  padding: 0 13px;
+  border: 1px solid #c9d6d0;
+  border-radius: 6px;
+  background: #fff;
+  color: #425d52;
+  font-weight: 750;
+}
+
+.wb-history {
+  width: min(720px, calc(100vw - 40px));
+}
+
+.wb-history > header,
+.wb-confirmation-modal > header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.wb-history > header h2,
+.wb-confirmation-modal > header h2 {
+  margin: 0;
+}
+
+.wb-history > header p,
+.wb-confirmation-modal > header p {
+  margin: 5px 0 18px;
+  color: #71817b;
+  font-size: 12px;
+}
+
+.wb-history > header > button,
+.wb-confirmation-modal > header > button {
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 6px;
+  background: #f1f5f3;
+  color: #53655d;
+  display: grid;
+  place-items: center;
+}
+
+.wb-history-list {
+  max-height: 430px;
+  overflow: auto;
+  border: 1px solid #dce6e1;
+  border-radius: 8px;
+}
+
+.wb-history-list article {
+  display: grid;
+  grid-template-columns: 38px 1fr auto auto;
+  align-items: center;
+  gap: 11px;
+  padding: 12px;
+  border-bottom: 1px solid #e5ece8;
+}
+
+.wb-history-list article:last-child { border-bottom: 0; }
+.wb-history-list article > span:nth-child(2) { display: flex; flex-direction: column; gap: 4px; }
+.wb-history-list small { color: #71817b; }
+.wb-history-list article > strong { color: #365046; font-size: 11px; }
+.wb-history-icon { width: 34px; height: 34px; border-radius: 7px; display: grid; place-items: center; color: #087441; background: #eaf6ef; }
+.wb-history-list article > button { height: 34px; border: 1px solid #b9d3c6; border-radius: 6px; background: #fff; color: #087441; padding: 0 11px; display: flex; align-items: center; gap: 6px; font-weight: 700; }
+.wb-history-empty { padding: 32px; text-align: center; color: #71817b; }
+
+.wb-confirmation-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgb(7 32 23 / 62%);
+}
+
+.wb-confirmation-modal {
+  width: min(930px, calc(100vw - 40px));
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+  border-radius: 10px;
+  background: #f3f7f5;
+  box-shadow: 0 24px 70px rgb(4 37 25 / 30%);
+}
+
+.wb-confirmation-modal > header { padding: 14px 18px 0; background: #fff; border-bottom: 1px solid #dfe6e3; }
+.wb-confirmation-paper { width: 850px; max-width: calc(100% - 40px); margin: 20px auto; padding: 28px 30px; border: 1px solid #d7dfdb; background: #fff; color: #1c3029; }
+.wb-document-title { display: flex; align-items: flex-start; justify-content: space-between; padding-bottom: 14px; border-bottom: 2px solid #087441; }
+.wb-company-identity { display: flex; flex-direction: row; align-items: center; gap: 11px; }
+.wb-company-identity > img { width: 62px; height: 46px; object-fit: contain; }
+.wb-company-identity > div { display: flex; flex-direction: column; gap: 4px; }
+.wb-company-identity b { color: #075537; font-size: 19px; }
+.wb-company-identity span { color: #6e7d77; font-size: 10px; }
+.wb-document-title > strong { color: #087441; font-size: 15px; }
+.wb-company-details { display: flex; justify-content: space-between; gap: 25px; padding: 9px 0 12px; border-bottom: 1px solid #dfe6e3; color: #5f7069; font-size: 9px; line-height: 1.45; }
+.wb-company-details span { max-width: 56%; white-space: pre-line; }
+.wb-company-details b { max-width: 42%; text-align: right; overflow-wrap: anywhere; }
+.wb-document-meta { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; padding: 14px 0; border-bottom: 1px solid #dfe6e3; }
+.wb-document-meta span { display: flex; flex-direction: column; gap: 5px; }
+.wb-confirmation-paper small { color: #7a8782; font-size: 8px; text-transform: uppercase; letter-spacing: .3px; }
+.wb-confirmation-paper b { font-size: 10px; }
+.wb-document-items h3 { margin: 16px 0 9px; color: #087441; font-size: 10px; text-transform: uppercase; }
+.wb-document-row { display: grid; grid-template-columns: 20px .9fr 1.05fr 1.35fr .95fr .78fr; gap: 8px; align-items: center; padding: 10px 8px; border-top: 1px solid #e5ebe8; font-size: 9px; }
+.wb-document-row.head { border: 0; background: #eff5f2; color: #65756e; font-size: 8px; text-transform: uppercase; }
+.wb-document-row > span { min-width: 0; overflow-wrap: anywhere; }
+.wb-document-row > span:nth-child(2), .wb-document-row > span:nth-child(3) { display: flex; flex-direction: column; gap: 4px; }
+.wb-document-row > strong { color: #173f31; overflow-wrap: anywhere; }
+.wb-item-barcode { min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.wb-item-barcode svg { display: block; width: 100%; height: 37px; fill: #111; shape-rendering: crispEdges; }
+.wb-item-barcode b { max-width: 100%; color: #111; font-family: "Courier New", monospace; font-size: 8px; letter-spacing: .5px; overflow-wrap: anywhere; }
+.wb-item-barcode.missing { min-height: 42px; justify-content: center; padding: 5px; border: 1px dashed #b9c5bf; color: #78867f; }
+.wb-item-barcode.missing span { font-size: 8px; }
+.wb-item-checklist { display: flex; flex-direction: column; gap: 4px; color: #44584f; font-size: 8px; }
+.wb-item-checklist span { display: flex; align-items: center; gap: 4px; white-space: nowrap; }
+.wb-item-checklist i { width: 9px; height: 9px; flex: none; border: 1px solid #53665d; background: #fff; }
+.wb-document-summary { width: 220px; margin: 12px 0 0 auto; padding: 10px 12px; display: flex; justify-content: space-between; background: #edf7f2; color: #087441; font-size: 11px; }
+.wb-document-notes { margin-top: 15px; padding: 10px 12px; background: #f5f8f6; }
+.wb-document-notes p { margin: 5px 0 0; color: #50625a; font-size: 9px; white-space: pre-wrap; }
+.wb-document-signatures { display: grid; grid-template-columns: 1fr 1fr; gap: 90px; margin-top: 42px; }
+.wb-document-signatures span { padding-top: 8px; border-top: 1px solid #87958f; text-align: center; color: #687872; font-size: 8px; }
+.wb-confirmation-paper footer { position: static; height: auto; margin-top: 20px; padding-top: 9px; border-top: 1px solid #dfe6e3; color: #718079; text-align: center; font-size: 8px; }
+.wb-confirmation-actions { position: sticky; bottom: 0; padding: 12px 18px; display: flex; justify-content: flex-end; gap: 9px; border-top: 1px solid #dfe6e3; background: #fff; }
+.wb-confirmation-actions button { height: 39px; padding: 0 15px; border: 1px solid #c9d5cf; border-radius: 6px; background: #fff; font-weight: 700; }
+.wb-confirmation-actions .primary { display: flex; align-items: center; gap: 7px; border-color: #087441; color: #fff; background: #087441; }
+
+@media (max-width: 760px) {
+  .wb-document-meta { grid-template-columns: 1fr 1fr; }
+  .wb-history-list article { grid-template-columns: 38px 1fr auto; }
+  .wb-history-list article > strong { display: none; }
+}
+
+@page { size: A4 landscape; margin: 0; }
+
+@media print {
+  body * { visibility: hidden !important; }
+  .wb-confirmation-overlay, .wb-confirmation-modal, .wb-confirmation-paper, .wb-confirmation-paper * { visibility: visible !important; }
+  .wb-confirmation-overlay { position: absolute; inset: 0; display: block; padding: 0; background: #fff; }
+  .wb-confirmation-modal { width: 100%; max-height: none; overflow: visible; border-radius: 0; box-shadow: none; background: #fff; }
+  .wb-confirmation-modal > header, .wb-confirmation-actions { display: none !important; }
+  .wb-confirmation-paper { width: 100%; max-width: none; margin: 0; padding: 12mm; border: 0; }
+}

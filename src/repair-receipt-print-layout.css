@@ -1,0 +1,39 @@
+@media print {
+  .rr-copies .rr-paper {
+    width: 210mm;
+    height: 270mm;
+    min-height: 270mm;
+    box-sizing: border-box;
+    padding: 10mm 18mm 8mm;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    page-break-inside: avoid;
+    break-inside: avoid-page;
+  }
+
+  .rr-copies .rr-paper > .rr-terms,
+  .rr-copies .rr-paper > .rr-signatures,
+  .rr-copies .rr-paper > footer {
+    flex: none;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .rr-copies .rr-paper > .rr-terms {
+    margin: 5mm 0 4mm;
+  }
+
+  .rr-copies .rr-paper > .rr-signatures {
+    gap: 20mm;
+  }
+
+  .rr-copies .rr-paper > footer {
+    margin-top: auto;
+  }
+
+  .rr-copies .rr-paper:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+}

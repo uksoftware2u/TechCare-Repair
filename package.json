@@ -1,0 +1,28 @@
+{
+  "name": "repair-system",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --configLoader runner",
+    "api": "node --env-file=.env.local server/index.mjs",
+    "db:check": "node --env-file=.env.local server/check-connection.mjs",
+    "db:migrate": "node --env-file=.env.local server/migrate.mjs",
+    "db:migrate:contracts": "node --env-file=.env.local server/migrate-service-contracts.mjs",
+    "db:seed": "node --env-file=.env.local server/seed.mjs",
+    "build": "vite build --configLoader runner && node scripts/prepare-sites-build.mjs",
+    "preview": "vite preview",
+    "test:sites": "node --test tests/sites-worker.test.mjs",
+    "test:onsite": "node --env-file=.env.local --test tests/onsite-service.test.mjs"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "@vitejs/plugin-react": "5.0.4",
+    "@zxing/browser": "^0.2.1",
+    "jspdf": "^4.2.1",
+    "mssql": "^12.7.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "vite": "6.4.2"
+  }
+}

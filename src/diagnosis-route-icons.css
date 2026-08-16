@@ -1,0 +1,61 @@
+.diagnosis-route > label {
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 7px;
+  transition: border-color .15s, background .15s, box-shadow .15s;
+}
+
+.diagnosis-route > label.route-bypass.selected {
+  border-color: #d87900;
+  background: #fff8e9;
+  box-shadow: inset 0 0 0 1px #d87900;
+}
+
+.diagnosis-route input {
+  margin: 0;
+  accent-color: #087441;
+}
+
+.diagnosis-route .route-bypass input {
+  accent-color: #d87900;
+}
+
+.diagnosis-route-icon {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  flex: none;
+  border-radius: 9px;
+  background: #e6f4ec;
+  color: #087441;
+  font-style: normal;
+}
+
+.diagnosis-route .route-bypass .diagnosis-route-icon {
+  background: #fff0d2;
+  color: #b86500;
+}
+
+.diagnosis-route > label.selected .diagnosis-route-icon {
+  background: #087441;
+  color: #fff;
+}
+
+.diagnosis-route > label.route-bypass.selected .diagnosis-route-icon {
+  background: #d87900;
+  color: #fff;
+}
+
+.diagnosis-route span {
+  gap: 4px;
+}
+
+.diagnosis-route span b {
+  font-size: 11px;
+}
+
+.diagnosis-route span small {
+  line-height: 1.4;
+}

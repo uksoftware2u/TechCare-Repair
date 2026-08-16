@@ -1,0 +1,21 @@
+.gm-profile-load-state {
+  margin-bottom: 12px;
+  padding: 11px 14px;
+  border: 1px solid #bfdccb;
+  border-radius: 7px;
+  background: #eef8f3;
+  color: #176342;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.gm-profile-load-state.error {
+  border-color: #edc3c3;
+  background: #fff1f1;
+  color: #a73737;
+}
+
+.gm-profile-load-state + .gm-card {
+  pointer-events: none;
+  opacity: 0.55;
+}

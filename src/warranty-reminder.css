@@ -1,0 +1,15 @@
+.wr-waiting-days{display:inline-flex;padding:5px 8px;border-radius:999px;background:#edf7f2;color:#087441;font-size:10px;font-weight:800;white-space:nowrap}
+.lm-summary>button{background:#fff;border:1px solid #dfe6e3;border-radius:8px;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;font:inherit;text-align:left;cursor:pointer;transition:border-color .15s,background .15s,box-shadow .15s}.lm-summary>button:hover{border-color:#84b9a1;background:#f5fbf8}.lm-summary>button.active{border-color:#087441;background:#eaf6ef;box-shadow:inset 0 0 0 1px #087441}.lm-summary>button.active span,.lm-summary>button.active strong{color:#087441}
+.cl-row.wr-batch-ready-row{background:#fff8d9;box-shadow:inset 4px 0 #e4b326}.cl-row.wr-batch-ready-row:hover{background:#fff3bc}
+.wr-waiting-days.overdue{background:#fff0df;color:#a8540c}
+.wr-supplier-wait{display:flex;align-items:center;gap:10px;margin-top:12px;padding:11px 12px;border:1px solid #cce5d8;border-radius:7px;background:#f2faf6;color:#087441}
+.wr-supplier-wait.overdue{border-color:#efc58f;background:#fff7ec;color:#a8540c}
+.wr-supplier-wait span{display:flex;flex-direction:column;gap:3px}.wr-supplier-wait b{font-size:12px}.wr-supplier-wait small{font-size:10px;color:#63786f}
+.wr-modal .lm-modal-actions .wr-remind-supplier{display:flex;align-items:center;gap:6px;border-color:#087441;color:#087441}
+.wr-reminder-bg{z-index:120}.wr-reminder-modal{width:min(680px,calc(100vw - 30px))}
+.wr-reminder-head{display:flex;align-items:flex-start;gap:11px;margin-bottom:16px;color:#087441}.wr-reminder-head h2{margin:0 0 4px;color:#223b32}.wr-reminder-head p{margin:0;color:#6a7b74}
+.wr-reminder-meta{display:grid;grid-template-columns:1.35fr .8fr .8fr;gap:9px;margin-bottom:14px}.wr-reminder-meta span{display:flex;flex-direction:column;gap:4px;padding:9px 10px;border-radius:6px;background:#f4f7f5}.wr-reminder-meta small{font-size:9px;color:#76857f}.wr-reminder-meta b{font-size:11px;color:#30473e;overflow-wrap:anywhere}
+.wr-reminder-modal>label{display:block;margin-top:11px;font-size:11px;font-weight:700;color:#3b5048}.wr-reminder-modal input,.wr-reminder-modal textarea{margin-top:6px}
+.wr-email-method{display:flex;align-items:center;gap:6px;margin:10px 0 0;padding:9px;border-radius:6px;background:#edf7f2;color:#49665a;font-size:10px}
+.wr-reminder-modal .lm-modal-actions .primary{display:flex;align-items:center;gap:7px}
+@media(max-width:700px){.wr-reminder-meta{grid-template-columns:1fr}.wr-modal .lm-modal-actions{flex-wrap:wrap}}

@@ -1,0 +1,9 @@
+.master-data-nav{display:flex;flex-direction:column;gap:3px;width:100%}
+.master-data-nav .master-data-toggle{display:grid!important;grid-template-columns:20px 1fr 16px!important;align-items:center!important;text-align:left!important}
+.master-data-nav .master-data-toggle span{text-align:left}
+.master-data-nav.active>.master-data-toggle{background:#ffffff12!important;color:#fff!important}
+.master-data-sub{display:flex;flex-direction:column;gap:3px;padding-left:18px}
+.master-data-sub button{display:flex!important;align-items:center!important;gap:9px!important;padding-left:20px!important;font-size:12px!important}
+.master-data-sub button span{text-align:left}
+.lm-side nav>button,.repairs-side nav>button,.dash-sidebar nav>button,.repair-side nav>button{display:flex;align-items:center;gap:10px}
+.lm-side nav>button span,.repairs-side nav>button span,.dash-sidebar nav>button span,.repair-side nav>button span{min-width:0;text-align:left}

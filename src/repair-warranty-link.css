@@ -1,0 +1,13 @@
+.rd-warranty-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 10px 13px;
+  border: 1px solid #9fcab4;
+  border-radius: 6px;
+  background: #eef8f3;
+  color: #087441;
+  font-weight: 700;
+  white-space: nowrap;
+}

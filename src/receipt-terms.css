@@ -1,0 +1,13 @@
+.rr-terms > b {
+  display: block;
+  margin-bottom: 4px;
+  color: #52665d;
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.rr-terms > p {
+  margin: 0;
+  white-space: pre-line;
+  line-height: 1.45;
+}

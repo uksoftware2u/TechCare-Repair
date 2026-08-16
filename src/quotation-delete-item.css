@@ -1,0 +1,21 @@
+.quotation .quote-head,.quotation .quote-row{grid-template-columns:22px minmax(92px,.8fr) minmax(100px,1fr) 42px 62px 62px 70px 34px;column-gap:6px;align-items:center}
+.quotation .quote-head{min-height:40px;padding:7px 8px}
+.quotation .quote-head span{min-width:0;line-height:1.25}
+.quotation .quote-head span:nth-child(4){text-align:center}
+.quotation .quote-head span:nth-child(5),.quotation .quote-head span:nth-child(6),.quotation .quote-head span:nth-child(7){text-align:right}
+.quotation .quote-head span:last-child{font-size:0;text-align:center}
+.quotation .quote-head span:last-child:after{content:""}
+.quotation .quote-row{min-height:55px;padding:7px 8px}
+.quotation .quote-row>span:first-child{text-align:center}
+.quotation .quote-row>input{width:100%;min-width:0;text-align:center}
+.quotation .quote-row>.quotation-discount{text-align:right}
+.quotation .quote-row>span:nth-of-type(3),.quotation .quote-row>strong{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.quotation-item-description{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#52675f}
+.quotation-delete-item{width:31px;height:31px;padding:0;border:1px solid #e5b9ac;border-radius:5px;display:grid;place-items:center;background:#fff7f4;color:#b84929;cursor:pointer}
+.quotation-delete-item:hover{background:#b84929;color:#fff}
+.qp-line-head,.qp-line{grid-template-columns:28px 78px minmax(0,1fr) 38px 76px 70px 82px;gap:6px}
+.qp-line>*{min-width:0}.qp-line>span:nth-child(3){overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* Balanced full-width quotation layout */
+.quotation .quote-head,.quotation .quote-row{grid-template-columns:34px minmax(180px,1.15fr) minmax(240px,2fr) 68px 96px 92px 105px 38px;column-gap:10px}.quotation .quote-head{min-height:46px;padding:9px 12px;font-size:11px;font-weight:750}.quotation .quote-row{min-height:64px;padding:9px 12px;font-size:11px}.quotation-item-picker select{height:38px;padding:7px 10px;font-size:11px}.quotation .quote-row>input{height:38px;padding:7px 9px;font-size:11px}.quotation-item-description{font-size:12px;color:#334b42}.quotation .quote-row>strong{font-size:12px;color:#163e30}.quotation-bottom-grid{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:18px;align-items:stretch;margin-top:14px;padding-top:16px;border-top:1px solid #dfe7e3}.quotation-customer-settings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 14px}.quotation-customer-settings h3,.quotation-customer-settings .approval{grid-column:1/-1}.quotation-customer-settings h3{margin:0!important;font-size:12px!important}.quotation-customer-settings .approval{margin:0 0 2px}.quotation-customer-settings>label{margin:0!important;font-size:11px!important;font-weight:700}.quotation-customer-settings>label:last-child{grid-column:1/-1}.quotation-customer-settings input{height:41px;margin-top:6px}.quotation-customer-settings textarea{min-height:78px;margin-top:6px!important;font-size:12px!important}.quotation-bottom-grid .totals{min-height:100%;margin:0;padding:16px;border:1px solid #d5e1db;border-radius:8px;background:#f8fbf9;gap:12px}.quotation-bottom-grid .totals span{font-size:12px}.quotation-bottom-grid .totals>strong{margin-top:auto;padding-top:13px;font-size:17px}.quotation .quote-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:14px}.quotation .quote-actions button{width:210px;height:41px;font-size:11px}.quotation.workflow-readonly .add-line,.quotation.workflow-readonly .quotation-delete-item,.quotation.workflow-readonly .quote-head>span:last-child{display:none}.quotation.workflow-readonly .quote-head,.quotation.workflow-readonly .quote-row{grid-template-columns:34px minmax(180px,1.15fr) minmax(240px,2fr) 68px 96px 92px 105px}
+@media(max-width:1050px){.quotation .quote-head,.quotation .quote-row{grid-template-columns:30px minmax(130px,1fr) minmax(170px,1.5fr) 58px 78px 78px 88px 34px;column-gap:7px}.quotation.workflow-readonly .quote-head,.quotation.workflow-readonly .quote-row{grid-template-columns:30px minmax(130px,1fr) minmax(170px,1.5fr) 58px 78px 78px 88px}.quotation-bottom-grid{grid-template-columns:1fr}.quotation .quote-actions button{flex:1}}

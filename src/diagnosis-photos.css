@@ -1,0 +1,19 @@
+.diagnosis-photo-heading{display:flex;align-items:center;justify-content:space-between;margin-top:12px}
+.diagnosis-photo-heading h3{margin:0!important}
+.diagnosis-photo-heading span{padding:3px 7px;border-radius:999px;background:#eaf6ef;color:#087441;font-size:9px;font-weight:700}
+.diagnosis-evidence{grid-template-columns:repeat(3,minmax(0,1fr))!important;margin-top:8px!important}
+.diagnosis-evidence figure{position:relative;margin:0;min-width:0;overflow:hidden;border:1px solid #d8e2dd;border-radius:6px;background:#f6f9f7;cursor:zoom-in;outline:none}
+.diagnosis-evidence figure:focus{border-color:#087441;box-shadow:0 0 0 2px #08744126}
+.diagnosis-evidence img{display:block;width:100%!important;height:92px!important;border-radius:0!important;object-fit:cover}
+.diagnosis-evidence figcaption{padding:5px 6px;color:#64766e;font-size:8px;text-align:center}
+.diagnosis-photo-zoom{position:absolute;top:6px;right:6px;z-index:1;width:25px;height:25px;border-radius:50%;display:grid;place-items:center;background:#173c30d9;color:#fff;pointer-events:none}
+.diagnosis-no-photos{margin:8px 0 10px;padding:12px;border:1px dashed #cbd8d2;border-radius:6px;background:#f7faf8;color:#6e7f78;font-size:10px;text-align:center}
+.diagnosis-photo-lightbox{position:fixed;inset:0;z-index:180;display:grid;place-items:center;padding:24px;background:#071a14e8;backdrop-filter:blur(4px)}
+.diagnosis-photo-lightbox>section{display:flex;flex-direction:column;width:min(1120px,calc(100vw - 48px));max-height:calc(100vh - 48px);overflow:hidden;border:1px solid #ffffff2e;border-radius:10px;background:#10251e;box-shadow:0 28px 90px #0009}
+.diagnosis-photo-lightbox header{display:flex;align-items:center;justify-content:space-between;padding:12px 15px;color:#fff}
+.diagnosis-photo-lightbox header>div{display:flex;flex-direction:column;gap:3px}
+.diagnosis-photo-lightbox header span{color:#b9cec5;font-size:11px}
+.diagnosis-photo-lightbox button{width:36px;height:36px;border:0;border-radius:6px;display:grid;place-items:center;background:#ffffff17;color:#fff;cursor:pointer}
+.diagnosis-photo-full{display:grid;place-items:center;min-height:240px;overflow:auto;background:#07100d}
+.diagnosis-photo-full img{display:block;max-width:100%;max-height:calc(100vh - 150px);width:auto;height:auto;object-fit:contain}
+.diagnosis-photo-lightbox>section>small{padding:8px 15px;color:#91aaa0;text-align:center}

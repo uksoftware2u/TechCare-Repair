@@ -1,0 +1,13 @@
+.cl-table-head > span {
+  justify-content: center;
+  padding-left: 12px;
+  text-align: center;
+}
+
+.cl-table-head > span > b {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

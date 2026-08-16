@@ -1,0 +1,112 @@
+.rp-summary > button {
+  background: #fff;
+  border: 1px solid #dfe6e3;
+  border-radius: 8px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 150ms ease, background 150ms ease, box-shadow 150ms ease;
+}
+
+.rp-summary > button:hover {
+  border-color: #9fc7b3;
+  background: #f7fbf9;
+}
+
+.rp-summary > button.active {
+  border-color: #087441;
+  background: #edf8f2;
+  box-shadow: 0 0 0 1px #087441;
+}
+
+.rp-summary > button.active span,
+.rp-summary > button.active strong {
+  color: #087441;
+}
+
+.rp-summary > button:focus-visible {
+  outline: 3px solid rgba(8, 116, 65, 0.22);
+  outline-offset: 2px;
+}
+
+@keyframes received-queue-pulse {
+  0%, 100% { border-color: #7057bc; background: #f3f0ff; box-shadow: 0 0 0 0 rgba(112, 87, 188, .48); }
+  50% { border-color: #9b84df; background: #fff; box-shadow: 0 0 0 7px rgba(112, 87, 188, 0); }
+}
+
+@keyframes progress-queue-pulse {
+  0%, 100% { border-color: #1478b8; background: #eaf6ff; box-shadow: 0 0 0 0 rgba(20, 120, 184, .48); }
+  50% { border-color: #61aad8; background: #fff; box-shadow: 0 0 0 7px rgba(20, 120, 184, 0); }
+}
+
+@keyframes approval-queue-pulse {
+  0%, 100% { border-color: #d87900; background: #fff5df; box-shadow: 0 0 0 0 rgba(216, 121, 0, .52); }
+  50% { border-color: #f0aa45; background: #fff; box-shadow: 0 0 0 7px rgba(216, 121, 0, 0); }
+}
+
+.rp-summary > button.queue-received {
+  animation: received-queue-pulse 1.15s ease-in-out infinite;
+}
+
+.rp-summary > button.queue-in-progress {
+  animation: progress-queue-pulse 1.15s ease-in-out infinite;
+}
+
+.rp-summary > button.queue-waiting-approval {
+  animation: approval-queue-pulse 1.15s ease-in-out infinite;
+}
+
+.rp-summary > button.queue-received span,
+.rp-summary > button.queue-received strong { color: #5e45a7; }
+.rp-summary > button.queue-in-progress span,
+.rp-summary > button.queue-in-progress strong { color: #106a9f; }
+.rp-summary > button.queue-waiting-approval span,
+.rp-summary > button.queue-waiting-approval strong { color: #a85d00; }
+
+@media (prefers-reduced-motion: reduce) {
+  .rp-summary > button.queue-attention {
+    animation: none;
+    border-width: 2px;
+  }
+
+  .rp-summary > button.queue-received { border-color: #7057bc; background: #f3f0ff; }
+  .rp-summary > button.queue-in-progress { border-color: #1478b8; background: #eaf6ff; }
+  .rp-summary > button.queue-waiting-approval { border-color: #d87900; background: #fff5df; }
+}
+
+@keyframes queue-number-size-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.38);
+    opacity: .58;
+  }
+}
+
+.rp-summary > button.queue-attention {
+  animation: none;
+}
+
+.rp-summary > button.queue-attention:not(.active) {
+  border-color: #dfe6e3;
+  background: #fff;
+  box-shadow: none;
+}
+
+.rp-summary > button.queue-attention strong {
+  display: inline-block;
+  animation: queue-number-size-pulse .9s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rp-summary > button.queue-attention strong {
+    animation: none;
+    transform: scale(1.12);
+  }
+}
