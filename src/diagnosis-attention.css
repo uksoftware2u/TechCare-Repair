@@ -1,0 +1,121 @@
+@keyframes diagnosis-stage-pulse {
+  0%, 100% {
+    background: #087441;
+    color: #fff;
+    box-shadow: 0 0 0 0 rgba(8, 116, 65, .5);
+  }
+  50% {
+    background: #f0a500;
+    color: #19372d;
+    box-shadow: 0 0 0 8px rgba(240, 165, 0, 0);
+  }
+}
+
+@keyframes diagnosis-panel-pulse {
+  0%, 100% {
+    border-color: #087441;
+    box-shadow: 0 0 0 1px rgba(8, 116, 65, .18), 0 4px 18px rgba(8, 116, 65, .08);
+  }
+  50% {
+    border-color: #f0a500;
+    box-shadow: 0 0 0 3px rgba(240, 165, 0, .28), 0 8px 25px rgba(240, 165, 0, .14);
+  }
+}
+
+@keyframes diagnosis-button-pulse {
+  0%, 100% {
+    background: #087441;
+    border-color: #087441;
+    box-shadow: 0 0 0 0 rgba(8, 116, 65, .5);
+    transform: translateY(0);
+  }
+  50% {
+    background: #0a9a56;
+    border-color: #f0a500;
+    box-shadow: 0 0 0 7px rgba(240, 165, 0, 0);
+    transform: translateY(-1px);
+  }
+}
+
+@keyframes diagnosis-tests-focus-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 1px rgba(8,116,65,.24), 0 5px 18px rgba(8,116,65,.06);
+  }
+  50% {
+    box-shadow: 0 0 0 3px rgba(240,165,0,.48), 0 9px 26px rgba(240,165,0,.18);
+  }
+}
+
+@keyframes diagnosis-tests-title-pulse {
+  0%,100% { color:#087441; }
+  50% { color:#b86f00; }
+}
+
+.rd-stages .diagnosis-stage-attention > span {
+  animation: none;
+  font-weight: 800;
+}
+
+.rd-stages .diagnosis-stage-attention b {
+  color: #087441;
+  font-weight: 800;
+}
+
+.rd-work > .diagnosis.diagnosis-attention {
+  animation: none;
+}
+
+.diagnosis-tests-heading.attention {
+  animation: diagnosis-tests-title-pulse 1.25s ease-in-out infinite;
+}
+
+.diagnosis .test-list.test-ratings.diagnosis-tests-attention {
+  border-radius:9px;
+  animation:diagnosis-tests-focus-pulse 1.25s ease-in-out infinite;
+}
+
+.diagnosis-attention > h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.diagnosis-action-required {
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: #fff0cf;
+  color: #9a5700;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.diag-actions .diagnosis-attention-button {
+  animation: none;
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rd-stages .diagnosis-stage-attention > span,
+  .rd-work > .diagnosis.diagnosis-attention,
+  .diag-actions .diagnosis-attention-button,
+  .diagnosis-tests-heading.attention,
+  .diagnosis .test-list.test-ratings.diagnosis-tests-attention {
+    animation: none;
+  }
+
+  .rd-stages .diagnosis-stage-attention > span,
+  .diag-actions .diagnosis-attention-button {
+    background: #087441;
+    color: #fff;
+  }
+
+  .rd-work > .diagnosis.diagnosis-attention {
+    border-color: #dfe6e2;
+  }
+
+  .diagnosis .test-list.test-ratings.diagnosis-tests-attention {
+    box-shadow:0 0 0 2px rgba(8,116,65,.35);
+  }
+}

@@ -1,0 +1,12 @@
+.ri-email-after-print{border-color:#d59b24!important;background:#fff8e7!important;color:#7a4b00!important}
+.ri-email-confirm-modal{width:min(560px,calc(100vw - 32px))}
+.ri-email-confirm-warning{display:flex;gap:11px;margin:18px 0;padding:13px 14px;border:1px solid #edc66f;border-radius:7px;background:#fff8e7;color:#7a4b00}
+.ri-email-confirm-warning>span{display:flex;flex-direction:column;gap:4px}
+.ri-email-confirm-warning small{color:#85672b;line-height:1.4}
+.ri-email-confirm-details{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 16px}
+.ri-email-confirm-details div{padding:10px 12px;border:1px solid #dce5e1;border-radius:6px;background:#f7faf8}
+.ri-email-confirm-details dt{margin-bottom:4px;color:#718078;font-size:10px;text-transform:uppercase}
+.ri-email-confirm-details dd{margin:0;color:#173c30;font-size:13px;font-weight:700;overflow-wrap:anywhere}
+.ri-email-confirm-check{display:flex!important;align-items:flex-start!important;gap:9px!important;padding:12px;border-radius:6px;background:#edf7f2;color:#274a3d;font-size:12px;font-weight:600}
+.ri-email-confirm-check input{width:17px!important;height:17px!important;margin:0!important;accent-color:#087441}
+@media(max-width:600px){.ri-email-confirm-details{grid-template-columns:1fr}}

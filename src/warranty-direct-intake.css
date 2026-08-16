@@ -1,0 +1,60 @@
+.wr-intake-modal {
+  width: min(760px, calc(100vw - 36px));
+  max-height: calc(100vh - 42px);
+  overflow-y: auto;
+}
+
+.wr-claim-mode {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 18px 0;
+  padding: 5px;
+  border-radius: 10px;
+  background: #f1f5f9;
+}
+
+.wr-claim-mode button {
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: #475569;
+  background: transparent;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.wr-claim-mode button.active {
+  color: #0f4c81;
+  background: #fff;
+  box-shadow: 0 1px 4px rgb(15 23 42 / 12%);
+}
+
+.wr-direct-note {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border: 1px solid #bfdbfe;
+  border-radius: 9px;
+  color: #1e3a5f;
+  background: #eff6ff;
+}
+
+.wr-direct-note span {
+  color: #52657a;
+  font-size: 13px;
+}
+
+.wr-intake-modal input[readonly] {
+  color: #64748b;
+  background: #f8fafc;
+}
+
+@media (max-width: 620px) {
+  .wr-claim-mode,
+  .wr-intake-modal .wr-form-grid {
+    grid-template-columns: 1fr;
+  }
+}

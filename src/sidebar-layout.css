@@ -1,0 +1,31 @@
+/* Shared signed-in navigation behavior across every main module. */
+.dash-sidebar,
+.repairs-side,
+.customer-side,
+.repair-side,
+.lm-side {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: 100vh;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.dash-sidebar > nav,
+.repairs-side > nav,
+.customer-side > nav,
+.repair-side > nav,
+.lm-side > nav {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.staff,
+.rp-user,
+.cm-user,
+.rd-user,
+.lm-user {
+  flex-shrink: 0;
+}

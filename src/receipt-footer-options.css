@@ -1,0 +1,31 @@
+.gm-receipt-footer-options {
+  grid-column: 1 / -1;
+}
+
+.gm-receipt-footer-options > label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 0;
+  color: #44544d;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.gm-receipt-footer-options textarea {
+  width: 100%;
+  min-height: 130px;
+  resize: vertical;
+  padding: 11px 12px;
+  border: 1px solid #ccd8d2;
+  border-radius: 6px;
+  background: #fff;
+  color: #1e3029;
+  font: 13px/1.5 Inter, Arial, sans-serif;
+}
+
+.gm-receipt-footer-options small {
+  color: #78857f;
+  font-size: 10px;
+  font-weight: 500;
+}

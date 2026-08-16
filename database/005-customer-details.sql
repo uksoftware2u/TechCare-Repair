@@ -1,0 +1,12 @@
+IF COL_LENGTH('dbo.Customers','BusinessRegistrationNo') IS NULL ALTER TABLE dbo.Customers ADD BusinessRegistrationNo nvarchar(100) NULL;
+IF COL_LENGTH('dbo.Customers','BillingAddress') IS NULL ALTER TABLE dbo.Customers ADD BillingAddress nvarchar(1000) NULL;
+IF COL_LENGTH('dbo.Customers','BillingPostcode') IS NULL ALTER TABLE dbo.Customers ADD BillingPostcode nvarchar(30) NULL;
+IF COL_LENGTH('dbo.Customers','DeliveryAddress') IS NULL ALTER TABLE dbo.Customers ADD DeliveryAddress nvarchar(1000) NULL;
+IF COL_LENGTH('dbo.Customers','DeliveryPostcode') IS NULL ALTER TABLE dbo.Customers ADD DeliveryPostcode nvarchar(30) NULL;
+IF COL_LENGTH('dbo.Customers','Attention') IS NULL ALTER TABLE dbo.Customers ADD Attention nvarchar(200) NULL;
+IF COL_LENGTH('dbo.Customers','BusinessNature') IS NULL ALTER TABLE dbo.Customers ADD BusinessNature nvarchar(200) NULL;
+IF COL_LENGTH('dbo.Customers','Phone') IS NULL ALTER TABLE dbo.Customers ADD Phone nvarchar(80) NULL;
+IF COL_LENGTH('dbo.Customers','Fax') IS NULL ALTER TABLE dbo.Customers ADD Fax nvarchar(80) NULL;
+IF COL_LENGTH('dbo.Customers','StatementEmail') IS NULL ALTER TABLE dbo.Customers ADD StatementEmail nvarchar(200) NULL;
+IF COL_LENGTH('dbo.Customers','Website') IS NULL ALTER TABLE dbo.Customers ADD Website nvarchar(250) NULL;
+IF COL_LENGTH('dbo.Customers','Agent') IS NULL ALTER TABLE dbo.Customers ADD Agent nvarchar(100) NULL;

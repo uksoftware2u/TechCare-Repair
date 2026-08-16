@@ -1,0 +1,26 @@
+.ri-header{height:auto;min-height:122px;padding:16px 29px 19px}.ri-header h1{font-size:29px;margin-top:7px}.ri-header p{margin-top:7px}.ri-breadcrumb{display:flex;align-items:center;gap:7px;font-size:11px;color:#829089}.ri-breadcrumb button{border:0;background:none;padding:0;color:#087441;font-weight:700}.ri-breadcrumb b{font-weight:600;color:#61716a}.ri-workspace{min-height:calc(100vh - 197px)}
+.ri-warranty-category-note {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 11px 13px;
+  border: 1px solid #e7d6ac;
+  border-radius: 7px;
+  color: #6f5316;
+  background: #fff9e9;
+}
+
+.ri-warranty-category-note span {
+  color: #786b4e;
+  font-size: 11px;
+}
+
+.ri-confirm-grid.ri-confirm-grid-compact {
+  grid-template-columns: 1fr .7fr;
+}
+
+@media (max-width: 900px) {
+  .ri-confirm-grid.ri-confirm-grid-compact {
+    grid-template-columns: 1fr;
+  }
+}

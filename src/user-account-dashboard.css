@@ -1,0 +1,22 @@
+.staff-profile {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex: 1;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.staff .up-modal .lm-modal-actions button {
+  height: 38px;
+  border: 1px solid #cbd7d1;
+  border-radius: 6px;
+  background: #fff;
+  color: #31453e;
+  padding: 0 14px;
+}
+
+.staff .up-modal .lm-modal-actions button.primary {
+  background: #087441;
+  color: #fff;
+}

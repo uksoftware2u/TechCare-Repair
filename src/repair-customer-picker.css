@@ -1,0 +1,79 @@
+.ri-customer-picker-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(12, 35, 27, 0.5);
+}
+
+.ri-customer-picker {
+  width: min(720px, 100%);
+  max-height: min(720px, calc(100vh - 48px));
+  overflow: auto;
+  padding: 22px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 24px 70px rgba(7, 43, 30, 0.25);
+}
+
+.ri-customer-picker > header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.ri-customer-picker > header h2 {
+  margin: 0;
+  color: #075537;
+  font-size: 20px;
+}
+
+.ri-customer-picker > header p {
+  margin: 6px 0 0;
+  color: #6b7a74;
+  font-size: 12px;
+}
+
+.ri-customer-picker > header > button {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: #f1f6f3;
+  color: #42564e;
+}
+
+.ri-customer-picker-actions {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+}
+
+.ri-customer-picker .ri-customer-list {
+  max-height: 460px;
+  overflow: auto;
+  padding-right: 2px;
+}
+
+@media (max-width: 680px) {
+  .ri-customer-picker-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .ri-customer-picker-actions .ri-outline {
+    justify-content: center;
+  }
+
+  .ri-customer-picker .ri-customer-list > button {
+    grid-template-columns: 34px 1fr 22px;
+  }
+
+  .ri-customer-picker .ri-customer-list i {
+    display: none;
+  }
+}

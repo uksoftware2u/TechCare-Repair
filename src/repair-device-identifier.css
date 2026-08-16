@@ -1,0 +1,252 @@
+.ri-identifier-field {
+  min-width: 0;
+  margin: 16px 0 4px;
+  padding: 0;
+  border: 0;
+}
+
+.ri-identifier-field legend {
+  margin-bottom: 9px;
+  color: #3e514a;
+  font-size: 12px;
+}
+
+.ri-identifier-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.ri-identifier-options label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+  margin: 0 !important;
+  padding: 12px 13px;
+  border: 1px solid #cbd7d1;
+  border-radius: 7px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.ri-identifier-options label.selected {
+  border-color: #087441;
+  background: #edf8f2;
+  box-shadow: inset 0 0 0 1px #087441;
+}
+
+.ri-identifier-options input {
+  width: 17px;
+  height: 17px;
+  margin: 1px 0 0;
+  padding: 0;
+  accent-color: #087441;
+  flex: none;
+}
+
+.ri-identifier-options span {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ri-identifier-options b {
+  color: #203a30;
+  font-size: 12px;
+}
+
+.ri-identifier-options small,
+.ri-internal-id-note {
+  color: #718079;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.ri-identifier-entry {
+  display: block !important;
+  margin-top: 13px !important;
+}
+
+.ri-generated-device-id {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  margin-top: 13px;
+  padding: 13px 15px;
+  border: 1px solid #a9d2bc;
+  border-radius: 7px;
+  background: #eff9f3;
+  color: #087441;
+}
+
+.ri-generated-device-id span {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ri-generated-device-id small,
+.ri-generated-device-id em {
+  color: #5c7168;
+  font-size: 11px;
+  font-style: normal;
+}
+
+.ri-generated-device-id b {
+  font-size: 15px;
+  letter-spacing: .04em;
+}
+
+.ri-internal-id-note {
+  display: block;
+  margin-top: 8px;
+}
+
+.ri-serial-scanner-modal {
+  width: min(680px, 94vw);
+}
+
+.ri-scanner-preview {
+  position: relative;
+  overflow: hidden;
+  background: #07110e;
+}
+
+.ri-scanner-preview video {
+  width: 100%;
+  min-height: 280px;
+  max-height: 62vh;
+  object-fit: cover;
+}
+
+.ri-scanner-frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(78%, 480px);
+  height: 34%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #32d17e;
+  border-radius: 12px;
+  box-shadow: 0 0 0 999px #0005;
+}
+
+.ri-scanner-status {
+  margin: 0;
+  padding: 11px 18px;
+  background: #eef8f3;
+  color: #16402f;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .ri-header {
+    height: auto;
+    min-height: 90px;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .ri-header h1 {
+    font-size: 24px;
+  }
+
+  .ri-meta {
+    display: none;
+  }
+
+  .ri-workspace {
+    display: block;
+    min-height: auto;
+  }
+
+  .ri-sidebar {
+    border-right: 0;
+    border-bottom: 1px solid #dfe7e3;
+  }
+
+  .ri-sidebar nav {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(105px, 1fr));
+    overflow-x: auto;
+  }
+
+  .ri-sidebar nav button {
+    min-height: 72px;
+    height: auto;
+    padding: 10px;
+    border-right: 0;
+    border-bottom: 3px solid transparent;
+  }
+
+  .ri-sidebar nav button.active {
+    border-right-color: transparent;
+    border-bottom-color: #087441;
+  }
+
+  .ri-customer-summary {
+    display: none;
+  }
+
+  .ri-content,
+  .ri-stage {
+    padding: 14px;
+  }
+
+  .ri-form-grid,
+  .ri-review,
+  .ri-confirm-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ri-full,
+  .ri-review-wide {
+    grid-column: auto;
+  }
+
+  .ri-footer {
+    height: auto;
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .ri-footer > div {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .ri-identifier-options {
+    grid-template-columns: 1fr;
+  }
+
+  .ri-input-action {
+    flex-direction: column;
+  }
+
+  .ri-input-action input,
+  .ri-input-action button {
+    min-height: 46px;
+    border: 1px solid #087441;
+    border-radius: 6px;
+  }
+
+  .ri-input-action button {
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  .ri-camera-overlay {
+    padding: 10px;
+  }
+
+  .ri-camera-actions {
+    flex-direction: column;
+  }
+
+  .ri-camera-actions button {
+    justify-content: center;
+  }
+}

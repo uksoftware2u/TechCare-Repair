@@ -1,0 +1,69 @@
+.aa-access-head.aa-access-head-users {
+  grid-template-columns: minmax(240px, 1fr) minmax(360px, 1.25fr) auto;
+}
+
+.aa-access-targets {
+  display: grid;
+  grid-template-columns: 145px minmax(210px, 1fr);
+  gap: 10px;
+}
+
+.aa-access-targets label {
+  min-width: 0;
+}
+
+.aa-access-targets select {
+  width: 100%;
+}
+
+.aa-access-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 7px;
+}
+
+.aa-access-head .aa-reset-access {
+  border-color: #e2bca9;
+  color: #a14a22;
+}
+
+.aa-user-access-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 10px 12px;
+  border: 1px solid #cfe1d8;
+  border-radius: 7px;
+  background: #f3f8f5;
+  color: #4e665c;
+  font-size: 11px;
+}
+
+.aa-user-access-status.custom {
+  border-color: #b7d9c7;
+  background: #edf8f2;
+  color: #087441;
+}
+
+.aa-user-access-status b {
+  margin-right: 4px;
+  color: #173f31;
+}
+
+@media (max-width: 1200px) {
+  .aa-access-head.aa-access-head-users {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .aa-access-actions {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 680px) {
+  .aa-access-targets {
+    grid-template-columns: 1fr;
+  }
+}

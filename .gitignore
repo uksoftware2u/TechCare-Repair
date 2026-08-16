@@ -1,0 +1,7 @@
+.env.local
+*.log
+*.bak
+.backup-downloads/
+node_modules/
+node_modules.incomplete/
+dist/

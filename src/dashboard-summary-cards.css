@@ -1,0 +1,217 @@
+.summary-row > button {
+  background: white;
+  border: 1px solid #dde5e1;
+  border-radius: 8px;
+  padding: 16px 18px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 150ms ease, background 150ms ease, box-shadow 150ms ease;
+}
+
+.summary-row > button:hover {
+  border-color: #9fc7b3;
+  background: #f7fbf9;
+}
+
+.summary-row > button.active {
+  border-color: #087441;
+  background: #edf8f2;
+  box-shadow: 0 0 0 1px #087441;
+}
+
+.summary-row > button.active span,
+.summary-row > button.active strong {
+  color: #087441;
+}
+
+.summary-row > button.warning {
+  border-color: #edc7b4;
+}
+
+.summary-row > button:focus-visible {
+  outline: 3px solid rgba(8,116,65,.22);
+  outline-offset: 2px;
+}
+
+@media (min-width: 1151px) {
+  .summary-row { grid-template-columns: repeat(6, minmax(150px, 1fr)); gap: 12px; }
+}
+.dash-actions .warranty-intake {
+  border: 1px solid #0f4c81;
+  color: #0f4c81;
+  background: #fff;
+  white-space: nowrap;
+}
+
+.dash-actions .warranty-intake:hover {
+  background: #eff6ff;
+}
+
+.dash-header {
+  gap: 20px;
+}
+
+.dash-heading,
+.dash-status {
+  flex: 0 0 auto;
+}
+
+.dash-barcode-scan {
+  position: relative;
+  width: min(440px, 38vw);
+  min-width: 300px;
+  min-height: 56px;
+  margin-left: auto;
+  padding: 6px 7px 6px 14px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 11px;
+  color: #087441;
+  background: #f7fbf9;
+  border: 1px solid #9fc7b3;
+  border-radius: 9px;
+  box-shadow: 0 2px 8px rgba(15, 78, 55, .06);
+}
+
+.dash-barcode-scan:focus-within {
+  border-color: #087441;
+  box-shadow: 0 0 0 3px rgba(8, 116, 65, .13);
+}
+
+.dash-barcode-scan.has-error {
+  border-color: #c54b31;
+}
+
+.dash-barcode-scan label {
+  min-width: 0;
+  display: grid;
+  gap: 1px;
+}
+
+.dash-barcode-scan label > span {
+  color: #345c4d;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.dash-barcode-scan input {
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  color: #153f31;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  font-size: 13px;
+}
+
+.dash-barcode-scan input::placeholder {
+  color: #81938c;
+}
+
+.dash-barcode-scan button {
+  height: 40px;
+  min-width: 70px;
+  padding: 0 14px;
+  color: white;
+  background: #087441;
+  border: 0;
+  border-radius: 7px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.dash-barcode-scan button:disabled {
+  opacity: .5;
+  cursor: default;
+}
+
+.dash-barcode-scan small {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 3;
+  padding: 5px 9px;
+  color: #8b2f1d;
+  background: #fff5f2;
+  border: 1px solid #edc7b4;
+  border-radius: 6px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+@media (max-width: 1250px) {
+  .dash-barcode-scan {
+    width: min(380px, 36vw);
+    min-width: 270px;
+  }
+
+  .dash-barcode-scan input {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 980px) {
+  .dash-header {
+    height: auto;
+    min-height: 86px;
+    flex-wrap: wrap;
+    padding-block: 12px;
+  }
+
+  .dash-barcode-scan {
+    order: 3;
+    width: 100%;
+    min-width: 0;
+    margin-left: 0;
+  }
+}
+
+.dash-header {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) minmax(330px, 430px) minmax(220px, 1fr);
+  align-items: center;
+  gap: 20px;
+}
+
+.dash-header-center {
+  width: 100%;
+  justify-self: center;
+}
+
+.dash-status {
+  justify-self: end;
+}
+
+@media (max-width: 1350px) {
+  .dash-header {
+    height: auto;
+    min-height: 126px;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    padding-block: 12px;
+  }
+
+  .dash-heading {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .dash-status {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .dash-header-center {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+}

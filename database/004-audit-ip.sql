@@ -1,0 +1,5 @@
+USE TechCareRepair;
+IF COL_LENGTH('dbo.AuditTrail','IpAddress') IS NULL ALTER TABLE dbo.AuditTrail ADD IpAddress nvarchar(80) NULL;
+GO
+USE TechCareRepair;
+UPDATE dbo.AuditTrail SET IpAddress=CASE AuditId WHEN 1 THEN N'192.168.1.21' WHEN 2 THEN N'192.168.1.21' WHEN 3 THEN N'192.168.1.10' WHEN 4 THEN N'192.168.1.33' WHEN 5 THEN N'192.168.1.21' WHEN 6 THEN N'192.168.1.44' ELSE IpAddress END WHERE IpAddress IS NULL;

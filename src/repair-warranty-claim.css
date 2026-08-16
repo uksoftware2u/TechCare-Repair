@@ -1,0 +1,39 @@
+.ri-warranty-claim {
+  display: flex !important;
+  align-items: center;
+  gap: 12px;
+  margin: 14px 0 18px !important;
+  padding: 13px 15px;
+  border: 1px solid #cbd7d1;
+  border-radius: 7px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.ri-warranty-claim.selected {
+  border-color: #087441;
+  background: #edf8f2;
+}
+
+.ri-warranty-claim input {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  accent-color: #087441;
+}
+
+.ri-warranty-claim span {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.ri-warranty-claim b {
+  font-size: 13px;
+  color: #203a30;
+}
+
+.ri-warranty-claim small {
+  font-size: 11px;
+  color: #718079;
+}
